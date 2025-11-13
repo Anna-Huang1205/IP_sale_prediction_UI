@@ -716,33 +716,6 @@ def predictor_page():
 
         # 商品选择
         st.sidebar.markdown("**🛍️ 商品选择**")
-
-        # IP类别筛选
-        ip_categories = st.sidebar.multiselect(
-            "**IP类别**",
-            options=df['IP类别'].unique(),
-            default=["IP类别_古风独家IP"],  # 默认选择古风独家IP
-            help="选择IP类别"
-        )
-
-        # 商品材质筛选
-        materials = st.sidebar.multiselect(
-            "**商品材质**",
-            options=df['商品材质'].unique(),
-            default=["木质"],  # 默认选择木质
-            help="选择商品材质"
-        )
-
-        # 商品用途筛选
-        purposes = st.sidebar.multiselect(
-            "**商品用途**",
-            options=df['商品用途'].unique(),
-            default=["箱包配饰"],  # 默认选择箱包配饰
-            help="选择商品用途"
-        )
-
-        # 商品选择
-        st.sidebar.markdown("**🛍️ 商品选择**")
         # IP类别筛选
         ip_categories = st.sidebar.multiselect(
             "IP类别",
@@ -1285,4 +1258,5 @@ def main():
         predictor_page()
 
 if __name__ == "__main__":
+
     main()
